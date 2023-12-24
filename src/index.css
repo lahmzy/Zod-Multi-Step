@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Poppins;
+}
+
+.switch {
+  @apply relative min-w-[40px] h-[20px] bg-marine-blue rounded-[10px] cursor-default;
+}
+
+.handle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.second-handle {
+    display: inline-block;
+    min-width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.switch.active .handle {
+  transform: translateX(30px);
+}
+/* 
+.switch.active p {
+  color: #00f; /* Change the color according to your design */
+ 
