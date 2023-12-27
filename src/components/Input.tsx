@@ -1,10 +1,10 @@
 import React from "react";
 import {
   FieldValues,
-  UseFormRegister,
+ 
   useFormContext,
   Controller,
-  Control
+  
 } from "react-hook-form";
 
 
@@ -20,15 +20,15 @@ type userInputFieldProps = {
 
 const Input: React.FC<userInputFieldProps> = ({
   name,
-  type,
+  
   label,
   placeholder,
   control,
-  ...rest
+  
   
 }) => {
   const {
-    register,
+    
     formState: { errors },
   } = useFormContext<FieldValues>();
 
