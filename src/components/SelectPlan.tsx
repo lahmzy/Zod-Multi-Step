@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import { planSelect } from "../utils/constants";
@@ -31,6 +31,7 @@ const selectPlan: React.FC = () => {
     }
   }
 
+  // code to handleClick
 
   const handleClick = (plan: string, planSelect: IPlanSelect[]) => {
     const chosenPlan = planSelect.find((items) => items.plan === plan);
