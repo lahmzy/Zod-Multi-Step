@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'sidebar-desktop': "url('src/multi-step-form-main/assets/images/bg-sidebar-desktop.svg')",
-        'sidebar-mobile': "url('src/multi-step-form-main/assets/images/bg-sidebar-mobile.svg')",
+        'sidebar-desktop': "url('bg-sidebar-desktop.svg')",
+        'sidebar-mobile': "url('bg-sidebar-mobile.svg')",
       },
       colors: {
         'marine-blue': 'hsl(213, 96%, 18%)',
