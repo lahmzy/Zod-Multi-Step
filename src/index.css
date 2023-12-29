@@ -33,7 +33,10 @@
 .switch.active .handle {
   transform: translateX(30px);
 }
-/* 
-.switch.active p {
-  color: #00f; /* Change the color according to your design */
- 
+
+@media screen and (max-width:370px){
+  .user-info{
+    max-width: 300px;
+    
+  }
+}
