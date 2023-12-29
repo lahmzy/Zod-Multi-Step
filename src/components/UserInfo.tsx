@@ -40,7 +40,7 @@ const UserInfo: React.FC = () => {
           onSubmit={methods.handleSubmit(onSubmit)}
           className="flex flex-col"
         >
-          <div className=" p-3 py-6 pb-7 -mt-[130px] md:mt-0 bg-white min-w-[340px] rounded-lg">
+          <div className=" p-3 py-6 pb-7 -mt-[130px] md:mt-0 bg-white sm:min-w-[260px] min-w-[340px] rounded-lg">
             <div className="flex flex-col md:gap-0 gap-4">
               <h2 className="text-2xl text-marine-blue font-semibold md:mb-5">
                 Personal info
