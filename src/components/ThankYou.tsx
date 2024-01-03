@@ -4,7 +4,7 @@ import iconThankyou from "../multi-step-form-main/assets/images/icon-thank-you.s
 const ThankYou: React.FC = () => {
   return (
     <section className="flex relative flex-col justify-center items-center h-full w-full">
-      <div className="flex flex-col absolute bottom-40 xs:bottom-60 items-center justify-center gap-2 p-3 px-4 py-20 pb-12 bg-white rounded-lg xs:w-[300px] max-w-[500px] md:gap-5 max-h-[500px]">
+      <div className="flex flex-col absolute md:bottom-54 xs:bottom-60 items-center justify-center gap-2 p-3 px-4 py-20 pb-12 bg-white rounded-lg xs:w-[300px] max-w-[500px] md:gap-5 max-h-[500px]">
         <div className="flex flex-col items-center  gap-3">
           <img className="w-[70px] h-[70px]" src={iconThankyou} />
           <h2 className="text-marine-blue text-xl font-semibold">Thank you!</h2>
