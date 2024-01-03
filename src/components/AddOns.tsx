@@ -48,7 +48,7 @@ const AddOns: React.FC = () => {
                 Pick add-ons
               </h2>
               <p className="text-cool-gray">
-                Add-ons help enhance your gaming <br className="md:hidden" />{" "}
+                Add-ons help enhance your gaming <br className="xs:hidden" />{" "}
                 experience
               </p>
             </div>
