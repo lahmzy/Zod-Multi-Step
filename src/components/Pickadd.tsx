@@ -16,7 +16,7 @@ const Pickadd: React.FC<PickaddProps> = ({ comment, package: pack, price, yearly
   const [coloredBorders,setColoredBorders] = useState<boolean>(false)
 
   return (
-    <label  className={`flex min-w-[320px] transition-all duration-200 hover:border-purplish-blue p-3 justify-between rounded-lg items-center px-2 border ${coloredBorders ? "border-purplish-blue bg-magnolia": "border-cool-gray"}`}>
+    <label  className={`flex w-full transition-all duration-200 hover:border-purplish-blue p-3 justify-between rounded-lg items-center px-2 border ${coloredBorders ? "border-purplish-blue bg-magnolia": "border-cool-gray"}`}>
       <div onClick={() => setColoredBorders(prev => !prev)} className="flex gap-3">
         <input type="checkbox" {...register(pack)} value={JSON.stringify({ pack, price,comment,yearly })}/>
         <div className=" flex flex-col">

@@ -19,7 +19,7 @@ const PlanCard: React.FC<PlanCardProps> = ({
 }) => {
   return (
     <div
-      className={`transition-all duration-500 md:justify-center md:min-h-[140px] px-3 py-2 flex md:flex-col md:gap-4 md:w-[150px] w-[300px] gap-3 border ${
+      className={`transition-all duration-500 md:justify-center md:min-h-[140px] px-3 py-2 flex md:flex-col md:gap-4 md:w-[150px]  gap-3 border ${
         plan === coloredPlan
           ? "border-purplish-blue border-2"
           : "border-cool-gray"

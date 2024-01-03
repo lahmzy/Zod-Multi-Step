@@ -68,7 +68,7 @@ const Input: React.FC<userInputFieldProps> = ({
         name={name}
         render={({ field }) => (
           <>
-            <input placeholder={placeholder} className="h-[30px] inline-block px-2 mt-1 py-3 rounded-md focus:border-none focus:outline-none border-cool-gray placeholder:text-gray-300 ring-2 ring-gray-300 focus:ring-light-blue min-w-[100%]" {...field} />
+            <input placeholder={placeholder} className="h-[30px] block px-2 mt-1 py-3 rounded-md focus:border-none focus:outline-none border-cool-gray placeholder:text-gray-300 ring-2 ring-gray-300 focus:ring-light-blue w-full" {...field} />
           </>
         )}
         rules={getValidationRules(name)} // Apply specific validation rules

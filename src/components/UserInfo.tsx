@@ -34,13 +34,13 @@ const UserInfo: React.FC = () => {
   };
 
   return (
-    <section className="w-full h-full flex flex-col justify-center  items-center">
+    <section className="w-full h-full flex flex-col justify-center items-center">
       <FormProvider {...methods}>
         <form
           onSubmit={methods.handleSubmit(onSubmit)}
           className="flex flex-col"
         >
-          <div className=" p-3 user-info py-6 pb-7 -mt-[130px] md:mt-0 bg-white  rounded-lg">
+          <div className=" p-3 py-6 pb-7 -mt-[80px] xs:-mt-[130px] md:mt-0 bg-white w-[300px] md:min-w-[340px] rounded-lg">
             <div className="flex flex-col md:gap-0 gap-4">
               <h2 className="text-2xl text-marine-blue font-semibold md:mb-5">
                 Personal info

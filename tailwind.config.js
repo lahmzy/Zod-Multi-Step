@@ -21,6 +21,9 @@ module.exports = {
         'alabaster': 'hsl(231, 100%, 99%)',
         'white': 'hsl(0, 0%, 100%)',
       },
+      screens: {
+        'xs': '300px',  // Define a custom screen size 'xs' with a max-width of 320px
+      }
     },
   },
   plugins: [],

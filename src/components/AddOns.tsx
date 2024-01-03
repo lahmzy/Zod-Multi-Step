@@ -42,7 +42,7 @@ const AddOns: React.FC = () => {
     <section className="flex flex-col w-full h-full justify-center items-center">
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="flex flex-col gap-4 p-3 px-4 py-6 pb-7 -mt-[80px] md:mt-0  bg-white rounded-md md:gap-5 max-w-[500px] max-h-[500px]">
+          <div className="flex flex-col gap-4 p-3 px-4 py-6 pb-7 -mt-[80px] md:mt-0 xs:w-[300px] sm:w-full bg-white  rounded-md md:gap-5 max-w-[500px] max-h-[500px]">
             <div className="flex flex-col gap-2 mb-2">
               <h2 className="text-marine-blue text-xl font-semibold">
                 Pick add-ons

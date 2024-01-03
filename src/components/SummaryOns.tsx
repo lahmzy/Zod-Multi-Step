@@ -10,7 +10,7 @@ type ISummaryOns = {
 
 const SummaryOns:React.FC<ISummaryOns> = ({pack,yearly,isYearly,price}) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex w-full justify-between">
       <p className="text-cool-gray">{ pack}</p>
       <span className="text-marine-blue">+${isYearly ? yearly : price} {`${isYearly ? "/yr" : "/mo"}` }</span>
     </div>

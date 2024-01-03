@@ -33,10 +33,10 @@
 .switch.active .handle {
   transform: translateX(30px);
 }
-
+/* 
 @media screen and (max-width:370px){
   .user-info{
     max-width: 300px;
     
   }
-}
+} */

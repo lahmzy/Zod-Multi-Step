@@ -47,7 +47,7 @@ const selectPlan: React.FC = () => {
     <section className="flex flex-col justify-center items-center h-full w-full">
       <ToastContainer />
       <div className=" flex flex-col gap-2 ">
-        <div className="flex flex-col gap-2 p-3 px-4 py-6 pb-7 -mt-[95px] md:mt-0 bg-white rounded-lg md:gap-5 max-w-[500px] max-h-[500px] transition-all duration-200">
+        <div className="flex flex-col gap-2 p-3 px-4 py-6 pb-7 -mt-[80px] xs:-mt-[130px] md:mt-0 bg-white rounded-lg md:gap-5 max-w-[500px] max-h-[520px] transition-all duration-200">
           <div className="flex flex-col gap-3">
             <h1 className="text-marine-blue text-xl font-semibold">
               Select your Plan
@@ -97,7 +97,7 @@ const selectPlan: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex md:px-[14px] justify-between items-center mt-16 py-3 pb-1 md:mt-40">
+        <div className="flex md:px-[14px]  md:h-0 justify-between items-center mt-16 py-3 pb-1 md:mt-40">
           <Link to="/">
             <button className="text-sm cursor-pointer hover:text-purplish-blue flex items-center justify-center rounded-sm text-cool-gray py-2 h-8">
               Go Back
