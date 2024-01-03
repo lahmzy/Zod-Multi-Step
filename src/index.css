@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  background-color: hsl(229, 24%, 87%);
+}
 :root {
   font-family: Poppins;
 }
