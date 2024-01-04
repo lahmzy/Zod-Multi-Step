@@ -3,20 +3,29 @@ import { Link } from "react-router-dom";
 import { useStateContext } from "../context/StateContext";
 import SummaryOns from "./SummaryOns";
 
-
 const Summary: React.FC = () => {
   const { isYearly, coloredPlan, addOns, selectedPlan } = useStateContext();
 
-  
-
   const checkedAddOns = addOns?.filter((items) => items.price) || [];
 
+  const TotalMonthlyPrice =
+    selectedPlan &&
+    selectedPlan.price +
+      (checkedAddOns.length > 0
+        ? checkedAddOns
+            .map((item) => item.price)
+            .reduce((accumulator, currentvalue) => accumulator + currentvalue)
+        : 0);
+  const TotalYearlyPrice =
+    selectedPlan &&
+    selectedPlan.annual +
+      (checkedAddOns.length > 0
+        ? checkedAddOns
+            .map((item) => item.yearly)
+            .reduce((accumulator, currentValue) => accumulator + currentValue)
+        : 0);
 
-  const TotalMonthlyPrice = selectedPlan && selectedPlan?.price + checkedAddOns?.map((item) => item.price)?.reduce((accumulator, currentvalue) => accumulator + currentvalue)
-  const TotalYearlyPrice = selectedPlan && selectedPlan?.annual + checkedAddOns?.map((item) => item.yearly)?.reduce((accumulator,currentValue) => accumulator + currentValue)
-  
-  console.log(TotalMonthlyPrice,TotalYearlyPrice)
-
+  console.log(TotalMonthlyPrice, TotalYearlyPrice);
 
   return (
     <section className="flex flex-col h-full w-full justify-center items-center">
@@ -54,7 +63,7 @@ const Summary: React.FC = () => {
 
                   return (
                     <SummaryOns
-                    key={comment}
+                      key={comment}
                       pack={pack}
                       price={price}
                       comment={comment}
@@ -66,9 +75,12 @@ const Summary: React.FC = () => {
               : null}
           </div>
           <div className="px-6 flex justify-between mt-3">
-            <p className="text-cool-gray ">{ `${isYearly ? "Total (per year)" : "Total (per month)"}`}</p>
+            <p className="text-cool-gray ">{`${
+              isYearly ? "Total (per year)" : "Total (per month)"
+            }`}</p>
             <span className="text-purplish-blue text-xl whitespace-nowrap font-semibold">
-              ${ isYearly ? TotalYearlyPrice : TotalMonthlyPrice } {`${isYearly ? "/yr" : "/mo"}`}
+              ${isYearly ? TotalYearlyPrice : TotalMonthlyPrice}{" "}
+              {`${isYearly ? "/yr" : "/mo"}`}
             </span>
           </div>
         </div>
